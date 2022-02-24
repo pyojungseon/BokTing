@@ -1,8 +1,0 @@
-Mode : TEST
-DB Construcor : T
-DB Mode : TEST
-<Section: TEST>
-/user
-2026330004 /user /user
-insert into LogTBL values('2026330004','/user','/user',current_timestamp)
-2026330004 표중선 010-5667-6106 2010062 Y N 2021-10-20 17:21:50

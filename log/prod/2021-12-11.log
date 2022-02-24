@@ -1,8 +1,0 @@
-Mode : PROD
-DB Construcor : P
-DB Mode : PROD
-<Section: PROD>
-/add
-2026330004 /add /add
-insert into LogTBL values('2026330004','/add','/add',current_timestamp)
-1
