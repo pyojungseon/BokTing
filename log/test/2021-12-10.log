@@ -1,0 +1,77 @@
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/notice
+2026330004 /notice /notice
+insert into LogTBL values('2026330004','/notice','/notice',current_timestamp)
+/add
+2026330004 /add /add
+insert into LogTBL values('2026330004','/add','/add',current_timestamp)
+1
+/add 승기 남 177 29 한은 강남
+2026330004 /add /add 승기 남 177 29 한은 강남
+insert into LogTBL values('2026330004','/add 승기 남 177 29 한은 강남','/add',current_timestamp)
+7
+mate insert error
+list index out of range
+/show
+2026330004 /show /show
+insert into LogTBL values('2026330004','/show','/show',current_timestamp)
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/add 승기 남 177 29 한은 강남
+2026330004 /add /add 승기 남 177 29 한은 강남
+insert into LogTBL values('2026330004','/add 승기 남 177 29 한은 강남','/add',current_timestamp)
+7
+mate insert error
+list index out of range
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/notice
+2026330004 /notice /notice
+insert into LogTBL values('2026330004','/notice','/notice',current_timestamp)
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/check 승기
+2026330004 /check /check 승기
+insert into LogTBL values('2026330004','/check 승기','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2026330004' and A.name='승기' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2026330004' and A.partnerName='승기' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+2
+0
+T||2026330004||승기 -> 사번, tall : 170 age : 29 company : 증권사 area : 잠실
+
+다슬 number : 010-9971-9294에게 연락하여 사번에 대해 문의하세요!
+T||2026330004||승기 -> 오번, tall : 168 age : 26 company : 제조업 area : 동작
+
+다슬 number : 010-9971-9294에게 연락하여 오번에 대해 문의하세요!
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/check 승기
+2026330004 /check /check 승기
+insert into LogTBL values('2026330004','/check 승기','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2026330004' and A.name='승기' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2026330004' and A.partnerName='승기' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+2
+0
+T||2026330004||[요구사항 :  <-> 양쪽 매칭 / -> 한쪽 매칭]
+
+T||2026330004||승기 -> 사번, tall : 170 age : 29 company : 증권사 area : 잠실
+
+다슬 number : 010-9971-9294에게 연락하여 사번에 대해 문의하세요!
+T||2026330004||승기 -> 오번, tall : 168 age : 26 company : 제조업 area : 동작
+
+다슬 number : 010-9971-9294에게 연락하여 오번에 대해 문의하세요!

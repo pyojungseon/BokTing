@@ -1,0 +1,21 @@
+Mode : PROD
+DB Construcor : P
+DB Mode : PROD
+<Section: PROD>
+/notice
+2095289208 /notice /notice
+insert into LogTBL values('2095289208','/notice','/notice',current_timestamp)
+/check
+2095289208 /check /check
+insert into LogTBL values('2095289208','/check','/check',current_timestamp)
+/check 조성훈
+2095289208 /check /check 조성훈
+insert into LogTBL values('2095289208','/check 조성훈','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2095289208' and A.name='조성훈' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2095289208' and A.partnerName='조성훈' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+0
+0
+P||2095289208||매칭 내역이 없습니다.
+/show
+2095289208 /show /show
+insert into LogTBL values('2095289208','/show','/show',current_timestamp)

@@ -1,0 +1,78 @@
+Mode : PROD
+DB Construcor : P
+DB Mode : PROD
+<Section: PROD>
+/add
+2026330004 /add /add
+insert into LogTBL values('2026330004','/add','/add',current_timestamp)
+1
+/add 이상문 남 174 31 LG씨엔에스 마곡 010-9511-0198
+2026330004 /add /add 이상문 남 174 31 LG씨엔에스 마곡 010-9511-0198
+insert into LogTBL values('2026330004','/add 이상문 남 174 31 LG씨엔에스 마곡 010-9511-0198','/add',current_timestamp)
+8
+insert into MateTBL(telegramID, name, sex, tall, age, company, area, phoneNumber, regDate, modDate) values('2026330004','이상문','남','174','31','LG씨엔에스','마곡','010-9511-0198',current_timestamp,current_timestamp)
+/addr
+2026330004 /addr /addr
+insert into LogTBL values('2026330004','/addr','/addr',current_timestamp)
+1
+/addr 이상문 155 165 26 32
+2026330004 /addr /addr 이상문 155 165 26 32
+insert into LogTBL values('2026330004','/addr 이상문 155 165 26 32','/addr',current_timestamp)
+6
+insert into ReqTBL values('2026330004','이상문','155','165','26','32',NULL,current_timestamp,current_timestamp)
+select * from MateTBL where telegramID ='2026330004' and name = '이상문'
+mateData : 이상문
+Matching Constructor : P
+DB Construcor : P
+DB Mode : PROD
+<Section: PROD>
+select * from MateTBL where tall between '155' and '165' and age between '26' and '32' and sex = '여' and telegramID != '2026330004'
+2051529128
+match data : 2051529128, 다은, 여
+select * from ReqTBL where telegramID ='2051529128' and name = '다은'
+insert into MatchTBL values('2026330004','이상문','2051529128','다은','N','N',current_timestamp,current_timestamp)
+P||2051529128||소개팅 대상자 [다은] 을(를) 원하는 사람이 있습니다! use 
+
+/check to check matching
+P||2026330004||소개팅 대상자 [이상문] 이(가) 매칭되었습니다! 
+
+/check 를 통해 매칭데이터를 확인하세요
+Matching Destructor
+DB Destructor
+/check
+2026330004 /check /check
+insert into LogTBL values('2026330004','/check','/check',current_timestamp)
+/check 상문
+2026330004 /check /check 상문
+insert into LogTBL values('2026330004','/check 상문','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2026330004' and A.name='상문' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2026330004' and A.partnerName='상문' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+0
+0
+P||2026330004||매칭 내역이 없습니다.
+/check
+2051529128 /check /check
+insert into LogTBL values('2051529128','/check','/check',current_timestamp)
+/check 다은
+2051529128 /check /check 다은
+insert into LogTBL values('2051529128','/check 다은','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2051529128' and A.name='다은' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2051529128' and A.partnerName='다은' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+1
+1
+P||2051529128||다은 -> 김태훈, tall : 180 age : 29 company : 한국은행 area : 분당
+
+김태훈 number : 01088612469에게 연락하여 김태훈에 대해 문의하세요!
+P||2051529128||다은 -> 이상문, tall : 174 age : 31 company : LG씨엔에스 area : 마곡
+
+표중선 number : 010-5667-6106에게 연락하여 다은에 대해 문의하세요!
+/check 이상문
+2026330004 /check /check 이상문
+insert into LogTBL values('2026330004','/check 이상문','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2026330004' and A.name='이상문' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2026330004' and A.partnerName='이상문' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+1
+0
+P||2026330004||이상문 -> 다은, tall : 155 age : 26 company : 마케팅 area : 부천
+
+다슬 number : 010-9071-9204에게 연락하여 다은에 대해 문의하세요!

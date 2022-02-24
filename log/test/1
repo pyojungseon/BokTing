@@ -1,0 +1,89 @@
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+DB Destructor
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/notice
+2026330004 /notice /notice
+insert into LogTBL values('2026330004','/notice','/notice',current_timestamp)
+DB Destructor
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+DB Destructor
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+insert into NoticeTBL(msg, send, regDate, modDate) values('공지테스트','N',current_timestamp,current_timestamp)
+T||2026330004|| 공지테스트
+DB Destructor
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+insert into NoticeTBL(msg, send, regDate, modDate) values(' 행내 매칭제외 기능을 추가하였습니다','N',current_timestamp,current_timestamp)
+T||2026330004|| 행내 매칭제외 기능을 추가하였습니다
+DB Destructor
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/add
+2026330004 /add /add
+insert into LogTBL values('2026330004','/add','/add',current_timestamp)
+1
+DB Destructor
+Traceback (most recent call last):
+  File "./telegramChat.py", line 321, in <module>
+    props = getConfig(env)
+  File "./telegramChat.py", line 19, in getConfig
+    print("Mode : %s" % props["env"])
+ValueError: underlying buffer has been detached
+Exception ignored in: <_io.TextIOWrapper encoding='utf-8'>
+ValueError: underlying buffer has been detached
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+DB Destructor
+Traceback (most recent call last):
+  File "./telegramChat.py", line 321, in <module>
+    props = getConfig(env)
+  File "./telegramChat.py", line 16, in getConfig
+    print("Mode : %s" % props["env"])
+ValueError: underlying buffer has been detached
+Exception ignored in: <_io.TextIOWrapper encoding='utf-8'>
+ValueError: underlying buffer has been detached
+Traceback (most recent call last):
+  File "./telegramChat.py", line 321, in <module>
+    props = getConfig(env)
+  File "./telegramChat.py", line 16, in getConfig
+    print("Mode : %s" % props["env"])
+ValueError: underlying buffer has been detached
+Exception ignored in: <_io.TextIOWrapper encoding='utf-8'>
+ValueError: underlying buffer has been detached
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/write
+2026330004 /write /write
+insert into LogTBL values('2026330004','/write','/write',current_timestamp)
+/write 한글 테스트 입니다
+2026330004 /write /write 한글 테스트 입니다
+insert into LogTBL values('2026330004','/write 한글 테스트 입니다','/write',current_timestamp)
+insert into SugTBL values('2026330004','한글 테스트 입니다',current_timestamp,current_timestamp)
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>

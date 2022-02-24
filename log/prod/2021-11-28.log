@@ -1,0 +1,14 @@
+Mode : PROD
+DB Construcor : P
+DB Mode : PROD
+<Section: PROD>
+/start
+2145991139 /start /start
+insert into LogTBL values('2145991139','/start','/start',current_timestamp)
+/notice
+2145991139 /notice /notice
+insert into LogTBL values('2145991139','/notice','/notice',current_timestamp)
+/add
+2145991139 /add /add
+insert into LogTBL values('2145991139','/add','/add',current_timestamp)
+1

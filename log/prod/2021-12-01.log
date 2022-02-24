@@ -1,0 +1,58 @@
+Mode : PROD
+DB Construcor : P
+DB Mode : PROD
+<Section: PROD>
+/check
+2143383014 /check /check
+insert into LogTBL values('2143383014','/check','/check',current_timestamp)
+/check 김태훈
+2143383014 /check /check 김태훈
+insert into LogTBL values('2143383014','/check 김태훈','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2143383014' and A.name='김태훈' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2143383014' and A.partnerName='김태훈' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+0
+1
+P||2143383014||김태훈 -> 다은, tall : 155 age : 26 company : 마케팅 area : 부천
+
+다슬 number : 010-9071-9204에게 연락하여 김태훈에 대해 문의하세요!
+/delr
+2095289208 /delr /delr
+insert into LogTBL values('2095289208','/delr','/delr',current_timestamp)
+/delr 조성훈
+2095289208 /delr /delr 조성훈
+insert into LogTBL values('2095289208','/delr 조성훈','/delr',current_timestamp)
+delete from ReqTBL where telegramID='2095289208' and name='조성훈'
+delete from MatchTBL where (telegramID='2095289208' and name='조성훈') or (partnerID='2095289208' and partnerName='조성훈')
+/showr
+2095289208 /showr /showr
+insert into LogTBL values('2095289208','/showr','/showr',current_timestamp)
+select * from ReqTBL where telegramID ='2095289208'
+/addr
+2095289208 /addr /addr
+insert into LogTBL values('2095289208','/addr','/addr',current_timestamp)
+1
+/addr 조성훈 155 171 28 31
+2095289208 /addr /addr 조성훈 155 171 28 31
+insert into LogTBL values('2095289208','/addr 조성훈 155 171 28 31','/addr',current_timestamp)
+6
+insert into ReqTBL values('2095289208','조성훈','155','171','28','31',NULL,current_timestamp,current_timestamp)
+select * from MateTBL where telegramID ='2095289208' and name = '조성훈'
+mateData : 조성훈
+Matching Constructor : P
+DB Construcor : P
+DB Mode : PROD
+<Section: PROD>
+select * from MateTBL where tall between '155' and '171' and age between '28' and '31' and sex = '여' and telegramID != '2095289208'
+Matching Destructor
+DB Destructor
+/add
+2145991139 /add /add
+insert into LogTBL values('2145991139','/add','/add',current_timestamp)
+1
+/add ??? 여성 160 28 토스 ??? ???
+2145991139 /add /add ??? 여성 160 28 토스 ??? ???
+insert into LogTBL values('2145991139','/add ??? 여성 160 28 토스 ??? ???','/add',current_timestamp)
+8
+insert into MateTBL(telegramID, name, sex, tall, age, company, area, phoneNumber, regDate, modDate) values('2145991139','???','여성','160','28','토스','???','???',current_timestamp,current_timestamp)
+mate insert error
+(1406, "Data too long for column 'sex' at row 1")

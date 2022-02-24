@@ -1,0 +1,309 @@
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/check
+2026330004 /check /check
+insert into LogTBL values('2026330004','/check','/check',current_timestamp)
+/show
+2026330004 /show /show
+insert into LogTBL values('2026330004','/show','/show',current_timestamp)
+/addr
+2026330004 /addr /addr
+insert into LogTBL values('2026330004','/addr','/addr',current_timestamp)
+1
+/showr
+2026330004 /showr /showr
+insert into LogTBL values('2026330004','/showr','/showr',current_timestamp)
+select * from ReqTBL where telegramID ='2026330004'
+/check
+2026330004 /check /check
+insert into LogTBL values('2026330004','/check','/check',current_timestamp)
+/write
+2026330004 /write /write
+insert into LogTBL values('2026330004','/write','/write',current_timestamp)
+/notice
+2026330004 /notice /notice
+insert into LogTBL values('2026330004','/notice','/notice',current_timestamp)
+/join
+2026330004 /join /join
+insert into LogTBL values('2026330004','/join','/join',current_timestamp)
+/show
+2026330004 /show /show
+insert into LogTBL values('2026330004','/show','/show',current_timestamp)
+/showr
+2026330004 /showr /showr
+insert into LogTBL values('2026330004','/showr','/showr',current_timestamp)
+select * from ReqTBL where telegramID ='2026330004'
+/notice
+2026330004 /notice /notice
+insert into LogTBL values('2026330004','/notice','/notice',current_timestamp)
+DB Destructor
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/notice
+2026330004 /notice /notice
+insert into LogTBL values('2026330004','/notice','/notice',current_timestamp)
+/write
+2026330004 /write /write
+insert into LogTBL values('2026330004','/write','/write',current_timestamp)
+/user
+2026330004 /user /user
+insert into LogTBL values('2026330004','/user','/user',current_timestamp)
+2026330004 표중선 010-5667-6106 2010062 Y 2021-10-20 17:21:50 2021-10-20 17:21:50
+/show
+2026330004 /show /show
+insert into LogTBL values('2026330004','/show','/show',current_timestamp)
+DB Destructor
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/show
+2026330004 /show /show
+insert into LogTBL values('2026330004','/show','/show',current_timestamp)
+/notice
+2026330004 /notice /notice
+insert into LogTBL values('2026330004','/notice','/notice',current_timestamp)
+/write
+2026330004 /write /write
+insert into LogTBL values('2026330004','/write','/write',current_timestamp)
+/join
+2026330004 /join /join
+insert into LogTBL values('2026330004','/join','/join',current_timestamp)
+/user
+2026330004 /user /user
+insert into LogTBL values('2026330004','/user','/user',current_timestamp)
+2026330004 표중선 010-5667-6106 2010062 Y 2021-10-20 17:21:50 2021-10-20 17:21:50
+/add
+2026330004 /add /add
+insert into LogTBL values('2026330004','/add','/add',current_timestamp)
+1
+/del
+2026330004 /del /del
+insert into LogTBL values('2026330004','/del','/del',current_timestamp)
+DB Destructor
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/del
+2026330004 /del /del
+insert into LogTBL values('2026330004','/del','/del',current_timestamp)
+/user
+2026330004 /user /user
+insert into LogTBL values('2026330004','/user','/user',current_timestamp)
+2026330004 표중선 010-5667-6106 2010062 Y 2021-10-20 17:21:50 2021-10-20 17:21:50
+/add
+2026330004 /add /add
+insert into LogTBL values('2026330004','/add','/add',current_timestamp)
+1
+/del
+2026330004 /del /del
+insert into LogTBL values('2026330004','/del','/del',current_timestamp)
+/showr
+2026330004 /showr /showr
+insert into LogTBL values('2026330004','/showr','/showr',current_timestamp)
+select * from ReqTBL where telegramID ='2026330004'
+/check
+2026330004 /check /check
+insert into LogTBL values('2026330004','/check','/check',current_timestamp)
+/notice
+2026330004 /notice /notice
+insert into LogTBL values('2026330004','/notice','/notice',current_timestamp)
+DB Destructor
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/showr
+2026330004 /showr /showr
+insert into LogTBL values('2026330004','/showr','/showr',current_timestamp)
+select * from ReqTBL where telegramID ='2026330004'
+/addr 원빈 158 163 26 29
+2026330004 /addr /addr 원빈 158 163 26 29
+insert into LogTBL values('2026330004','/addr 원빈 158 163 26 29','/addr',current_timestamp)
+6
+/show
+2026330004 /show /show
+insert into LogTBL values('2026330004','/show','/show',current_timestamp)
+/add
+2026330004 /add /add
+insert into LogTBL values('2026330004','/add','/add',current_timestamp)
+1
+/add 원빈 남 175 28 신한 목동 010-1234-1234
+2026330004 /add /add 원빈 남 175 28 신한 목동 010-1234-1234
+insert into LogTBL values('2026330004','/add 원빈 남 175 28 신한 목동 010-1234-1234','/add',current_timestamp)
+8
+insert into MateTBL(telegramID, name, sex, tall, age, company, area, phoneNumber, regDate, modDate) values('2026330004','원빈','남','175','28','신한','목동','010-1234-1234',current_timestamp,current_timestamp)
+/addr 원빈 158 163 26 29
+2026330004 /addr /addr 원빈 158 163 26 29
+insert into LogTBL values('2026330004','/addr 원빈 158 163 26 29','/addr',current_timestamp)
+6
+insert into ReqTBL values('2026330004','원빈','158','163','26','29',NULL,current_timestamp,current_timestamp)
+select * from MateTBL where telegramID ='2026330004' and name = '원빈'
+mateData : 원빈
+Matching Constructor : T
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+select * from MateTBL where tall between '158' and '163' and age between '26' and '29' and sex = '여' and telegramID != '2026330004'
+Matching Destructor
+DB Destructor
+/delr 원빈
+2026330004 /delr /delr 원빈
+insert into LogTBL values('2026330004','/delr 원빈','/delr',current_timestamp)
+delete from ReqTBL where telegramID='2026330004' and name='원빈'
+delete from MatchTBL where (telegramID='2026330004' and name='원빈') or (partnerID='2026330004' and partnerName='원빈')
+/delr 현빈
+2026330004 /delr /delr 현빈
+insert into LogTBL values('2026330004','/delr 현빈','/delr',current_timestamp)
+delete from ReqTBL where telegramID='2026330004' and name='현빈'
+delete from MatchTBL where (telegramID='2026330004' and name='현빈') or (partnerID='2026330004' and partnerName='현빈')
+/addr 현빈 163 170 25 35
+2026330004 /addr /addr 현빈 163 170 25 35
+insert into LogTBL values('2026330004','/addr 현빈 163 170 25 35','/addr',current_timestamp)
+6
+insert into ReqTBL values('2026330004','현빈','163','170','25','35',NULL,current_timestamp,current_timestamp)
+select * from MateTBL where telegramID ='2026330004' and name = '현빈'
+mateData : 현빈
+Matching Constructor : T
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+select * from MateTBL where tall between '163' and '170' and age between '25' and '35' and sex = '여' and telegramID != '2026330004'
+2051529128
+2051529128
+match data : 2051529128, 사번, 여
+select * from ReqTBL where telegramID ='2051529128' and name = '사번'
+insert into MatchTBL values('2026330004','현빈','2051529128','사번','N','N',current_timestamp,current_timestamp)
+T||2051529128||소개팅대상자 [사번] 을(를) 원하는 사람이 있습니다! 
+
+/check를 통해 매칭데이터를 확인하세요
+T||2026330004||소개팅대상자 [현빈] 이(가) 매칭되었습니다! 
+
+/check를 통해 매칭데이터를 확인하세요
+match data : 2051529128, 오번, 여
+select * from ReqTBL where telegramID ='2051529128' and name = '오번'
+insert into MatchTBL values('2026330004','현빈','2051529128','오번','N','N',current_timestamp,current_timestamp)
+T||2051529128||소개팅대상자 [오번] 을(를) 원하는 사람이 있습니다! 
+
+/check를 통해 매칭데이터를 확인하세요
+T||2026330004||소개팅대상자 [현빈] 이(가) 매칭되었습니다! 
+
+/check를 통해 매칭데이터를 확인하세요
+Matching Destructor
+DB Destructor
+/check 현빈
+2026330004 /check /check 현빈
+insert into LogTBL values('2026330004','/check 현빈','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2026330004' and A.name='현빈' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2026330004' and A.partnerName='현빈' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+2
+0
+T||2026330004||현빈 -> 사번, tall : 170 age : 29 company : 증권사 area : 잠실
+
+Please contact to 다슬 number : 010-9971-9294. and ask about 사번
+T||2026330004||현빈 -> 오번, tall : 168 age : 26 company : 제조업 area : 동작
+
+Please contact to 다슬 number : 010-9971-9294. and ask about 오번
+/addr
+2051529128 /addr /addr
+insert into LogTBL values('2051529128','/addr','/addr',current_timestamp)
+1
+/addr 병욱 160 165 23 29
+2051529128 /addr /addr 병욱 160 165 23 29
+insert into LogTBL values('2051529128','/addr 병욱 160 165 23 29','/addr',current_timestamp)
+6
+/add
+2051529128 /add /add
+insert into LogTBL values('2051529128','/add','/add',current_timestamp)
+1
+/add 병욱 남 174 26 키움증권 여의도 010-5883-9166
+2051529128 /add /add 병욱 남 174 26 키움증권 여의도 010-5883-9166
+insert into LogTBL values('2051529128','/add 병욱 남 174 26 키움증권 여의도 010-5883-9166','/add',current_timestamp)
+8
+insert into MateTBL(telegramID, name, sex, tall, age, company, area, phoneNumber, regDate, modDate) values('2051529128','병욱','남','174','26','키움증권','여의도','010-5883-9166',current_timestamp,current_timestamp)
+/addr 병욱 160 165 23 29
+2051529128 /addr /addr 병욱 160 165 23 29
+insert into LogTBL values('2051529128','/addr 병욱 160 165 23 29','/addr',current_timestamp)
+6
+insert into ReqTBL values('2051529128','병욱','160','165','23','29',NULL,current_timestamp,current_timestamp)
+select * from MateTBL where telegramID ='2051529128' and name = '병욱'
+mateData : 병욱
+Matching Constructor : T
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+select * from MateTBL where tall between '160' and '165' and age between '23' and '29' and sex = '여' and telegramID != '2051529128'
+2026330004
+match data : 2026330004, 지은, 여
+select * from ReqTBL where telegramID ='2026330004' and name = '지은'
+insert into MatchTBL values('2051529128','병욱','2026330004','지은','N','N',current_timestamp,current_timestamp)
+T||2026330004||소개팅대상자 [지은] 을(를) 원하는 사람이 있습니다! 
+
+/check를 통해 매칭데이터를 확인하세요
+T||2051529128||소개팅대상자 [병욱] 이(가) 매칭되었습니다! 
+
+/check를 통해 매칭데이터를 확인하세요
+Matching Destructor
+DB Destructor
+/check
+2051529128 /check /check
+insert into LogTBL values('2051529128','/check','/check',current_timestamp)
+/check 병욱
+2051529128 /check /check 병욱
+insert into LogTBL values('2051529128','/check 병욱','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2051529128' and A.name='병욱' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2051529128' and A.partnerName='병욱' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+1
+0
+T||2051529128||병욱 -> 지은, tall : 160 age : 28 company : 수은 area : 광교
+
+Please contact to 표중선 number : 010-5667-6106. and ask about 지은
+/check 지은
+2026330004 /check /check 지은
+insert into LogTBL values('2026330004','/check 지은','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2026330004' and A.name='지은' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2026330004' and A.partnerName='지은' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+0
+1
+/check 현빈
+2026330004 /check /check 현빈
+insert into LogTBL values('2026330004','/check 현빈','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2026330004' and A.name='현빈' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2026330004' and A.partnerName='현빈' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+2
+0
+T||2026330004||현빈 -> 사번, tall : 170 age : 29 company : 증권사 area : 잠실
+
+Please contact to 다슬 number : 010-9971-9294. and ask about 사번
+T||2026330004||현빈 -> 오번, tall : 168 age : 26 company : 제조업 area : 동작
+
+Please contact to 다슬 number : 010-9971-9294. and ask about 오번
+DB Destructor
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/check 지은
+2026330004 /check /check 지은
+insert into LogTBL values('2026330004','/check 지은','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2026330004' and A.name='지은' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2026330004' and A.partnerName='지은' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+0
+1
+T||2026330004||지은 -> 병욱, tall : 174 age : 26 company : 키움증권 area : 여의도
+
+다슬 number : 010-9971-9294에게 연락하여 지은에 대해 문의하세요!
+DB Destructor
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/check
+2036355131 /check /check
+insert into LogTBL values('2036355131','/check','/check',current_timestamp)
+DB Destructor

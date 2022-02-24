@@ -1,0 +1,35 @@
+Mode : PROD
+DB Construcor : P
+DB Mode : PROD
+<Section: PROD>
+/join 조성훈 010-3344-9987 1710273
+2095289208 /join /join 조성훈 010-3344-9987 1710273
+insert into LogTBL values('2095289208','/join 조성훈 010-3344-9987 1710273','/join',current_timestamp)
+insert into UserTBL values('2095289208','조성훈','010-3344-9987','1710273','Y',current_timestamp,current_timestamp)
+/user
+2095289208 /user /user
+insert into LogTBL values('2095289208','/user','/user',current_timestamp)
+2095289208 조성훈 010-3344-9987 1710273 Y 2021-11-27 12:00:38 2021-11-27 12:00:38
+/show
+2095289208 /show /show
+insert into LogTBL values('2095289208','/show','/show',current_timestamp)
+/notice
+2095289208 /notice /notice
+insert into LogTBL values('2095289208','/notice','/notice',current_timestamp)
+/show
+2095289208 /show /show
+insert into LogTBL values('2095289208','/show','/show',current_timestamp)
+/user
+2095289208 /user /user
+insert into LogTBL values('2095289208','/user','/user',current_timestamp)
+2095289208 조성훈 010-3344-9987 1710273 Y 2021-11-27 12:00:38 2021-11-27 12:00:38
+/notice
+2095289208 /notice /notice
+insert into LogTBL values('2095289208','/notice','/notice',current_timestamp)
+/add
+2095289208 /add /add
+insert into LogTBL values('2095289208','/add','/add',current_timestamp)
+1
+/show
+2095289208 /show /show
+insert into LogTBL values('2095289208','/show','/show',current_timestamp)

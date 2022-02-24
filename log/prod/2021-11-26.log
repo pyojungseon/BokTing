@@ -1,0 +1,118 @@
+Mode : PROD
+DB Construcor : P
+DB Mode : PROD
+<Section: PROD>
+DB Destructor
+Mode : PROD
+DB Construcor : P
+DB Mode : PROD
+<Section: PROD>
+/notice
+2026330004 /notice /notice
+insert into LogTBL values('2026330004','/notice','/notice',current_timestamp)
+insert into NoticeTBL(msg, send, regDate, modDate) values(' 행내직원 매칭방지 기능이 추가되었습니다 /add를 눌러 확인하여주세요!','N',current_timestamp,current_timestamp)
+P||2026330004|| 행내직원 매칭방지 기능이 추가되었습니다 /add를 눌러 확인하여주세요!
+Mode : PROD
+DB Construcor : P
+DB Mode : PROD
+<Section: PROD>
+/notice
+2026330004 /notice /notice
+insert into LogTBL values('2026330004','/notice','/notice',current_timestamp)
+/addr
+2026330004 /addr /addr
+insert into LogTBL values('2026330004','/addr','/addr',current_timestamp)
+1
+/add
+2026330004 /add /add
+insert into LogTBL values('2026330004','/add','/add',current_timestamp)
+1
+/showr
+2106117527 /showr /showr
+insert into LogTBL values('2106117527','/showr','/showr',current_timestamp)
+select * from ReqTBL where telegramID ='2106117527'
+/start
+2143383014 /start /start
+insert into LogTBL values('2143383014','/start','/start',current_timestamp)
+/join
+2143383014 /join /join
+insert into LogTBL values('2143383014','/join','/join',current_timestamp)
+/join 김태훈 01088612469 2010194
+2143383014 /join /join 김태훈 01088612469 2010194
+insert into LogTBL values('2143383014','/join 김태훈 01088612469 2010194','/join',current_timestamp)
+insert into UserTBL values('2143383014','김태훈','01088612469','2010194','Y',current_timestamp,current_timestamp)
+/user
+2143383014 /user /user
+insert into LogTBL values('2143383014','/user','/user',current_timestamp)
+2143383014 김태훈 01088612469 2010194 Y 2021-11-26 16:14:55 2021-11-26 16:14:55
+/add
+2143383014 /add /add
+insert into LogTBL values('2143383014','/add','/add',current_timestamp)
+1
+/add
+2143383014 /add /add
+insert into LogTBL values('2143383014','/add','/add',current_timestamp)
+1
+/add 김태훈 남 180 29 한국은행 분당 01088612469
+2143383014 /add /add 김태훈 남 180 29 한국은행 분당 01088612469
+insert into LogTBL values('2143383014','/add 김태훈 남 180 29 한국은행 분당 01088612469','/add',current_timestamp)
+8
+insert into MateTBL(telegramID, name, sex, tall, age, company, area, phoneNumber, regDate, modDate) values('2143383014','김태훈','남','180','29','한국은행','분당','01088612469',current_timestamp,current_timestamp)
+/show
+2143383014 /show /show
+insert into LogTBL values('2143383014','/show','/show',current_timestamp)
+/addr
+2143383014 /addr /addr
+insert into LogTBL values('2143383014','/addr','/addr',current_timestamp)
+1
+/check
+2143383014 /check /check
+insert into LogTBL values('2143383014','/check','/check',current_timestamp)
+/check 김태훈
+2143383014 /check /check 김태훈
+insert into LogTBL values('2143383014','/check 김태훈','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2143383014' and A.name='김태훈' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2143383014' and A.partnerName='김태훈' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+0
+0
+P||2143383014||매칭 내역이 없습니다.
+/add
+2051529128 /add /add
+insert into LogTBL values('2051529128','/add','/add',current_timestamp)
+1
+/add
+2106117527 /add /add
+insert into LogTBL values('2106117527','/add','/add',current_timestamp)
+1
+/start
+2095289208 /start /start
+insert into LogTBL values('2095289208','/start','/start',current_timestamp)
+/start
+2095289208 /start /start
+insert into LogTBL values('2095289208','/start','/start',current_timestamp)
+/check
+2095289208 /check /check
+insert into LogTBL values('2095289208','/check','/check',current_timestamp)
+/show
+2095289208 /show /show
+insert into LogTBL values('2095289208','/show','/show',current_timestamp)
+/join
+2095289208 /join /join
+insert into LogTBL values('2095289208','/join','/join',current_timestamp)
+/notice
+2095289208 /notice /notice
+insert into LogTBL values('2095289208','/notice','/notice',current_timestamp)
+/add
+2095289208 /add /add
+insert into LogTBL values('2095289208','/add','/add',current_timestamp)
+1
+/join
+2095289208 /join /join
+insert into LogTBL values('2095289208','/join','/join',current_timestamp)
+/showr
+2095289208 /showr /showr
+insert into LogTBL values('2095289208','/showr','/showr',current_timestamp)
+select * from ReqTBL where telegramID ='2095289208'
+/join
+2095289208 /join /join
+insert into LogTBL values('2095289208','/join','/join',current_timestamp)

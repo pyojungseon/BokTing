@@ -1,0 +1,10 @@
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+DB Destructor
+Mode : PROD
+DB Construcor : P
+DB Mode : PROD
+<Section: PROD>
+DB Destructor

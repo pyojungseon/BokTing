@@ -1,0 +1,34 @@
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/check
+2026330004 /check /check
+insert into LogTBL values('2026330004','/check','/check',current_timestamp)
+log insert error
+(2006, "MySQL server has gone away (ConnectionResetError(104, 'Connection reset by peer'))")
+/check
+2026330004 /check /check
+insert into LogTBL values('2026330004','/check','/check',current_timestamp)
+log insert error
+(0, '')
+/check
+2026330004 /check /check
+insert into LogTBL values('2026330004','/check','/check',current_timestamp)
+log insert error
+(0, '')
+/check
+2026330004 /check /check
+insert into LogTBL values('2026330004','/check','/check',current_timestamp)
+log insert error
+(0, '')
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/check
+2026330004 /check /check
+insert into LogTBL values('2026330004','/check','/check',current_timestamp)
+/check
+2026330004 /check /check
+insert into LogTBL values('2026330004','/check','/check',current_timestamp)

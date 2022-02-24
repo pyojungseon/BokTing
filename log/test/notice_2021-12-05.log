@@ -1,0 +1,10 @@
+Notice Constructor : T
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+select * from NoticeTBL where send='N' order by regDate
+select * from UserTBL where enable='Y'

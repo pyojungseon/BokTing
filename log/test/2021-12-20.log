@@ -1,0 +1,130 @@
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/user
+2026330004 /user /user
+insert into LogTBL values('2026330004','/user','/user',current_timestamp)
+2026330004 표중선 010-5667-6106 2010062 Y N 2021-10-20 17:21:50 2021-10-20 17:21:50
+/showr
+2026330004 /showr /showr
+insert into LogTBL values('2026330004','/showr','/showr',current_timestamp)
+select * from ReqTBL where telegramID ='2026330004'
+/delr 승기
+2026330004 /delr /delr 승기
+insert into LogTBL values('2026330004','/delr 승기','/delr',current_timestamp)
+delete from ReqTBL where telegramID='2026330004' and name='승기'
+delete from MatchTBL where (telegramID='2026330004' and name='승기') or (partnerID='2026330004' and partnerName='승기')
+/addr
+2026330004 /addr /addr
+insert into LogTBL values('2026330004','/addr','/addr',current_timestamp)
+1
+['/addr', '']
+/addr 승기 160 170 25 30 테스트 데이터 입력하는 중입니다.
+2026330004 /addr /addr 승기 160 170 25 30 테스트 데이터 입력하는 중입니다.
+insert into LogTBL values('2026330004','/addr 승기 160 170 25 30 테스트 데이터 입력하는 중입니다.','/addr',current_timestamp)
+10
+['/addr', '승기', '160', '170', '25', '30', ' 테스트 데이터 입력하는 중입니다.']
+insert into ReqTBL values(' 테스트 데이터 입력하는 중입니다.','승기','160','170','25','30',NULL,' 테스트 데이터 입력하는 중입니다.',current_timestamp,current_timestamp)
+req insert error
+(1406, "Data too long for column 'telegramID' at row 1")
+select * from MateTBL where telegramID ='2026330004' and name = '승기'
+mateData : 승기
+Matching Constructor : T
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+select * from MateTBL where tall between '160' and '170' and age between '25' and '30' and sex = '여' and telegramID != ' 테스트 데이터 입력하는 중입니다.'
+2026330004
+2051529128
+2051529128
+match data : 2026330004, 지은, 여
+select * from ReqTBL where telegramID ='2026330004' and name = '지은'
+select MAX(SEQ)+1 from MatchTBL where telegramID='2026330004'
+insert into MatchTBL values('5','2026330004','승기','2026330004','지은','N','Y','N',current_timestamp,current_timestamp)
+T||2026330004||소개팅대상자 [지은] 을(를) 원하는 사람이 있습니다! 
+
+/check를 통해 매칭데이터를 확인하세요
+T||2026330004||소개팅대상자 [승기] 이(가) 매칭되었습니다! 
+
+/check를 통해 매칭데이터를 확인하세요
+match data : 2051529128, 사번, 여
+select * from ReqTBL where telegramID ='2051529128' and name = '사번'
+select MAX(SEQ)+1 from MatchTBL where telegramID='2026330004'
+insert into MatchTBL values('6','2026330004','승기','2051529128','사번','N','Y','N',current_timestamp,current_timestamp)
+T||2051529128||소개팅대상자 [사번] 을(를) 원하는 사람이 있습니다! 
+
+/check를 통해 매칭데이터를 확인하세요
+T||2026330004||소개팅대상자 [승기] 이(가) 매칭되었습니다! 
+
+/check를 통해 매칭데이터를 확인하세요
+match data : 2051529128, 오번, 여
+select * from ReqTBL where telegramID ='2051529128' and name = '오번'
+select MAX(SEQ)+1 from MatchTBL where telegramID='2026330004'
+insert into MatchTBL values('7','2026330004','승기','2051529128','오번','N','Y','N',current_timestamp,current_timestamp)
+T||2051529128||소개팅대상자 [오번] 을(를) 원하는 사람이 있습니다! 
+
+/check를 통해 매칭데이터를 확인하세요
+T||2026330004||소개팅대상자 [승기] 이(가) 매칭되었습니다! 
+
+/check를 통해 매칭데이터를 확인하세요
+Matching Destructor
+DB Destructor
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/delr 승기
+2026330004 /delr /delr 승기
+insert into LogTBL values('2026330004','/delr 승기','/delr',current_timestamp)
+delete from ReqTBL where telegramID='2026330004' and name='승기'
+delete from MatchTBL where (telegramID='2026330004' and name='승기') or (partnerID='2026330004' and partnerName='승기')
+/addr 승기 155 155 25 25 테스트 데이터 입력 중 입니다.
+2026330004 /addr /addr 승기 155 155 25 25 테스트 데이터 입력 중 입니다.
+insert into LogTBL values('2026330004','/addr 승기 155 155 25 25 테스트 데이터 입력 중 입니다.','/addr',current_timestamp)
+11
+['/addr', '승기', '155', '155', '25', '25', ' 테스트 데이터 입력 중 입니다.']
+insert into ReqTBL values('/addr','승기','155','155','25','25',NULL,' 테스트 데이터 입력 중 입니다.',current_timestamp,current_timestamp)
+select * from MateTBL where telegramID ='2026330004' and name = '승기'
+mateData : 승기
+Matching Constructor : T
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+select * from MateTBL where tall between '155' and '155' and age between '25' and '25' and sex = '여' and telegramID != ' 테스트 데이터 입력 중 입니다.'
+Matching Destructor
+DB Destructor
+/showr
+2026330004 /showr /showr
+insert into LogTBL values('2026330004','/showr','/showr',current_timestamp)
+select * from ReqTBL where telegramID ='2026330004'
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/showr
+2026330004 /showr /showr
+insert into LogTBL values('2026330004','/showr','/showr',current_timestamp)
+select * from ReqTBL where telegramID ='2026330004'
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/showr
+2026330004 /showr /showr
+insert into LogTBL values('2026330004','/showr','/showr',current_timestamp)
+select * from ReqTBL where telegramID ='2026330004'
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/showr
+2026330004 /showr /showr
+insert into LogTBL values('2026330004','/showr','/showr',current_timestamp)
+select * from ReqTBL where telegramID ='2026330004'
+None
+None

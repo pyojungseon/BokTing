@@ -1,0 +1,78 @@
+Notice Constructor : T
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+select * from NoticeTBL where send='N' order by regDate
+select * from UserTBL where enable='Y'
+Notice Destructor
+DB Destructor
+DB Destructor
+Notice Constructor : T
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+select * from NoticeTBL where send='N' order by regDate
+select * from UserTBL where enable='Y'
+T||2026330004||[��������]�೻
+T||2036355131||[��������]�೻
+T||2051529128||[��������]�೻
+update NoticeTBL set send='Y', modDate=current_timestamp where seq = '4'
+Notice Destructor
+DB Destructor
+DB Destructor
+Notice Constructor : T
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+select * from NoticeTBL where send='N' order by regDate
+select * from UserTBL where enable='Y'
+Notice Destructor
+DB Destructor
+DB Destructor
+Notice Constructor : T
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+select * from NoticeTBL where send='N' order by regDate
+select * from UserTBL where enable='Y'
+(5, ' 행내 매칭제외 기능을 추가하였습니다', 'N', datetime.datetime(2021, 11, 26, 14, 30, 16), datetime.datetime(2021, 11, 26, 14, 29, 54))
+T||2026330004||[공지사항 2021-11-26] 행내 매칭제외 기능을 추가하였습니다
+T||2036355131||[공지사항 2021-11-26] 행내 매칭제외 기능을 추가하였습니다
+T||2051529128||[공지사항 2021-11-26] 행내 매칭제외 기능을 추가하였습니다
+update NoticeTBL set send='Y', modDate=current_timestamp where seq = '5'
+Notice Constructor : T
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+select * from NoticeTBL where send='N' order by regDate
+select * from UserTBL where enable='Y'
+Notice Constructor : T
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+select * from NoticeTBL where send='N' order by regDate
+select * from UserTBL where enable='Y'

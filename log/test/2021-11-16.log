@@ -1,0 +1,171 @@
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/check
+2026330004 /check /check
+insert into LogTBL values('2026330004','/check','/check',current_timestamp)
+/check
+2026330004 /check /check
+insert into LogTBL values('2026330004','/check','/check',current_timestamp)
+DB Destructor
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+DB Destructor
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/check
+2051529128 /check /check
+insert into LogTBL values('2051529128','/check','/check',current_timestamp)
+/check 오번
+2051529128 /check /check 오번
+insert into LogTBL values('2051529128','/check 오번','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2051529128' and A.name='오번' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2051529128' and A.partnerName='오번' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+0
+1
+/check 오번
+2051529128 /check /check 오번
+insert into LogTBL values('2051529128','/check 오번','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2051529128' and A.name='오번' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2051529128' and A.partnerName='오번' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+0
+1
+/check 다섯
+2051529128 /check /check 다섯
+insert into LogTBL values('2051529128','/check 다섯','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2051529128' and A.name='다섯' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2051529128' and A.partnerName='다섯' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+0
+1
+/notice
+2051529128 /notice /notice
+insert into LogTBL values('2051529128','/notice','/notice',current_timestamp)
+/write
+2051529128 /write /write
+insert into LogTBL values('2051529128','/write','/write',current_timestamp)
+/write /check 기능이 안먹혀욧!!!!
+2051529128 /write /write /check 기능이 안먹혀욧!!!!
+insert into LogTBL values('2051529128','/write /check 기능이 안먹혀욧!!!!','/write',current_timestamp)
+insert into SugTBL values('2051529128','/check 기능이 안먹혀욧!!!!',current_timestamp,current_timestamp)
+/show
+2051529128 /show /show
+insert into LogTBL values('2051529128','/show','/show',current_timestamp)
+/delr
+2051529128 /delr /delr
+insert into LogTBL values('2051529128','/delr','/delr',current_timestamp)
+/delr 오번
+2051529128 /delr /delr 오번
+insert into LogTBL values('2051529128','/delr 오번','/delr',current_timestamp)
+delete from ReqTBL where telegramID='2051529128' and name='오번'
+delete from MatchTBL where (telegramID='2051529128' and name='오번') or (partnerID='2051529128' and partnerName='오번')
+/show
+2051529128 /show /show
+insert into LogTBL values('2051529128','/show','/show',current_timestamp)
+/delr 다섯
+2051529128 /delr /delr 다섯
+insert into LogTBL values('2051529128','/delr 다섯','/delr',current_timestamp)
+delete from ReqTBL where telegramID='2051529128' and name='다섯'
+delete from MatchTBL where (telegramID='2051529128' and name='다섯') or (partnerID='2051529128' and partnerName='다섯')
+/delr 네엣
+2051529128 /delr /delr 네엣
+insert into LogTBL values('2051529128','/delr 네엣','/delr',current_timestamp)
+delete from ReqTBL where telegramID='2051529128' and name='네엣'
+delete from MatchTBL where (telegramID='2051529128' and name='네엣') or (partnerID='2051529128' and partnerName='네엣')
+/del 다슬
+2051529128 /del /del 다슬
+insert into LogTBL values('2051529128','/del 다슬','/del',current_timestamp)
+delete from MateTBL where telegramID='2051529128' and name='다슬'
+delete from ReqTBL where telegramID='2051529128' and name='다슬'
+delete from MatchTBL where (telegramID='2051529128' and name='다슬') or (partnerID='2051529128' and partnerName='다슬')
+/user
+2051529128 /user /user
+insert into LogTBL values('2051529128','/user','/user',current_timestamp)
+2051529128 다슬 010-9971-9294 2020246 Y 2021-10-20 15:55:07 2021-10-20 15:55:07
+/del  다슬
+2051529128 /del /del  다슬
+insert into LogTBL values('2051529128','/del  다슬','/del',current_timestamp)
+/user
+2051529128 /user /user
+insert into LogTBL values('2051529128','/user','/user',current_timestamp)
+2051529128 다슬 010-9971-9294 2020246 Y 2021-10-20 15:55:07 2021-10-20 15:55:07
+/join
+2051529128 /join /join
+insert into LogTBL values('2051529128','/join','/join',current_timestamp)
+/join 다슬 010-0000-0000
+2051529128 /join /join 다슬 010-0000-0000
+insert into LogTBL values('2051529128','/join 다슬 010-0000-0000','/join',current_timestamp)
+/join 다슬 010-0000-0000 2020246
+2051529128 /join /join 다슬 010-0000-0000 2020246
+insert into LogTBL values('2051529128','/join 다슬 010-0000-0000 2020246','/join',current_timestamp)
+insert into UserTBL values('2051529128','다슬','010-0000-0000','2020246','Y',current_timestamp,current_timestamp)
+user insert error
+(1062, "Duplicate entry '2051529128' for key 'PRIMARY'")
+/user
+2051529128 /user /user
+insert into LogTBL values('2051529128','/user','/user',current_timestamp)
+2051529128 다슬 010-9971-9294 2020246 Y 2021-10-20 15:55:07 2021-10-20 15:55:07
+/del 다슬
+2051529128 /del /del 다슬
+insert into LogTBL values('2051529128','/del 다슬','/del',current_timestamp)
+delete from MateTBL where telegramID='2051529128' and name='다슬'
+delete from ReqTBL where telegramID='2051529128' and name='다슬'
+delete from MatchTBL where (telegramID='2051529128' and name='다슬') or (partnerID='2051529128' and partnerName='다슬')
+/user
+2051529128 /user /user
+insert into LogTBL values('2051529128','/user','/user',current_timestamp)
+2051529128 다슬 010-9971-9294 2020246 Y 2021-10-20 15:55:07 2021-10-20 15:55:07
+/del 다슬
+2051529128 /del /del 다슬
+insert into LogTBL values('2051529128','/del 다슬','/del',current_timestamp)
+delete from MateTBL where telegramID='2051529128' and name='다슬'
+delete from ReqTBL where telegramID='2051529128' and name='다슬'
+delete from MatchTBL where (telegramID='2051529128' and name='다슬') or (partnerID='2051529128' and partnerName='다슬')
+/user
+2051529128 /user /user
+insert into LogTBL values('2051529128','/user','/user',current_timestamp)
+2051529128 다슬 010-9971-9294 2020246 Y 2021-10-20 15:55:07 2021-10-20 15:55:07
+/join 다똥 010-0000-0000 2020246
+2051529128 /join /join 다똥 010-0000-0000 2020246
+insert into LogTBL values('2051529128','/join 다똥 010-0000-0000 2020246','/join',current_timestamp)
+insert into UserTBL values('2051529128','다똥','010-0000-0000','2020246','Y',current_timestamp,current_timestamp)
+user insert error
+(1062, "Duplicate entry '2051529128' for key 'PRIMARY'")
+/user
+2051529128 /user /user
+insert into LogTBL values('2051529128','/user','/user',current_timestamp)
+2051529128 다슬 010-9971-9294 2020246 Y 2021-10-20 15:55:07 2021-10-20 15:55:07
+/user
+2051529128 /user /user
+insert into LogTBL values('2051529128','/user','/user',current_timestamp)
+2051529128 다슬 010-9971-9294 2020246 Y 2021-10-20 15:55:07 2021-10-20 15:55:07
+DB Destructor
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/check
+2026330004 /check /check
+insert into LogTBL values('2026330004','/check','/check',current_timestamp)
+/check 두울
+2051529128 /check /check 두울
+insert into LogTBL values('2051529128','/check 두울','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2051529128' and A.name='두울' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2051529128' and A.partnerName='두울' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+1
+0
+T||2051529128||두울 <-> 현빈, tall : 180 age : 30 company : 한은 area : 잠실
+
+Please contact to 표중선 number : 010-5667-6106. and ask about 현빈
+/check 다섯
+2051529128 /check /check 다섯
+insert into LogTBL values('2051529128','/check 다섯','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2051529128' and A.name='다섯' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2051529128' and A.partnerName='다섯' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+0
+1
+DB Destructor

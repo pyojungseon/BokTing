@@ -1,0 +1,304 @@
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/notice
+2026330004 /notice /notice
+insert into LogTBL values('2026330004','/notice','/notice',current_timestamp)
+/check 현빈
+2026330004 /check /check 현빈
+insert into LogTBL values('2026330004','/check 현빈','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2026330004' and A.name='현빈' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2026330004' and A.partnerName='현빈' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+1
+0
+T||2026330004||[요구사항 :  <-> 양쪽 매칭 / -> 한쪽 매칭]
+
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/check 현빈
+2026330004 /check /check 현빈
+insert into LogTBL values('2026330004','/check 현빈','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2026330004' and A.name='현빈' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2026330004' and A.partnerName='현빈' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+1
+0
+T||2026330004||[요구사항 :  <-> 양쪽 매칭 / -> 한쪽 매칭]
+
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/check 현빈
+2026330004 /check /check 현빈
+insert into LogTBL values('2026330004','/check 현빈','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2026330004' and A.name='현빈' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2026330004' and A.partnerName='현빈' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+1
+0
+T||2026330004||[요구사항 :  <-> 양쪽 매칭 / -> 한쪽 매칭]
+
+3
+현빈
+유라
+여
+175
+35
+한국은행
+시청
+혀녹
+유라
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/check 현빈
+2026330004 /check /check 현빈
+insert into LogTBL values('2026330004','/check 현빈','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2026330004' and A.name='현빈' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2026330004' and A.partnerName='현빈' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+1
+0
+T||2026330004||[요구사항 :  <-> 양쪽 매칭 / -> 한쪽 매칭]
+
+3
+현빈
+유라
+여
+175
+35
+한국은행
+시청
+혀녹
+010-4065-2034
+유라
+T||2026330004||3번 
+현빈 -> 유라, tall : 175 age : 35 company : 한국은행 area : 시청
+
+혀녹 number : 010-4065-2034에게 연락하여 유라에 대해 문의하세요!
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/check 원빈
+2026330004 /check /check 원빈
+insert into LogTBL values('2026330004','/check 원빈','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2026330004' and A.name='원빈' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2026330004' and A.partnerName='원빈' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+0
+0
+T||2026330004||매칭 내역이 없습니다.
+/check 현빈
+2026330004 /check /check 현빈
+insert into LogTBL values('2026330004','/check 현빈','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2026330004' and A.name='현빈' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2026330004' and A.partnerName='현빈' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+1
+0
+T||2026330004||[요구사항 :  <-> 양쪽 매칭 / -> 한쪽 매칭]
+
+T||2026330004||3번 
+현빈 -> 유라, tall : 175 age : 35 company : 한국은행 area : 시청
+
+혀녹 number : 010-4065-2034에게 연락하여 유라에 대해 문의하세요!
+/addr
+2026330004 /addr /addr
+insert into LogTBL values('2026330004','/addr','/addr',current_timestamp)
+1
+/delr 현빈
+2026330004 /delr /delr 현빈
+insert into LogTBL values('2026330004','/delr 현빈','/delr',current_timestamp)
+delete from ReqTBL where telegramID='2026330004' and name='현빈'
+delete from MatchTBL where (telegramID='2026330004' and name='현빈') or (partnerID='2026330004' and partnerName='현빈')
+/addr 현빈 155 160 29 31
+2026330004 /addr /addr 현빈 155 160 29 31
+insert into LogTBL values('2026330004','/addr 현빈 155 160 29 31','/addr',current_timestamp)
+6
+insert into ReqTBL values('2026330004','현빈','155','160','29','31',NULL,current_timestamp,current_timestamp)
+select * from MateTBL where telegramID ='2026330004' and name = '현빈'
+mateData : 현빈
+Matching Constructor : T
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+select * from MateTBL where tall between '155' and '160' and age between '29' and '31' and sex = '여' and telegramID != '2026330004'
+2051529128
+2051529128
+match data : 2051529128, 삼번, 여
+select * from ReqTBL where telegramID ='2051529128' and name = '삼번'
+select MAX(SEQ)+1 from MatchTBL where telegramID='2026330004'
+insert into MatchTBL values('(3,)','2026330004','현빈','2051529128','삼번','N','Y','N',current_timestamp,current_timestamp)
+matchData insert error
+(1366, "Incorrect integer value: '(3,)' for column `BokTing_T`.`MatchTBL`.`seq` at row 1")
+T||2051529128||소개팅대상자 [삼번] 을(를) 원하는 사람이 있습니다! 
+
+/check를 통해 매칭데이터를 확인하세요
+T||2026330004||소개팅대상자 [현빈] 이(가) 매칭되었습니다! 
+
+/check를 통해 매칭데이터를 확인하세요
+Matching Destructor
+DB Destructor
+/check 현빈
+2026330004 /check /check 현빈
+insert into LogTBL values('2026330004','/check 현빈','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2026330004' and A.name='현빈' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2026330004' and A.partnerName='현빈' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+0
+0
+T||2026330004||매칭 내역이 없습니다.
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/delr 현빈
+2026330004 /delr /delr 현빈
+insert into LogTBL values('2026330004','/delr 현빈','/delr',current_timestamp)
+delete from ReqTBL where telegramID='2026330004' and name='현빈'
+delete from MatchTBL where (telegramID='2026330004' and name='현빈') or (partnerID='2026330004' and partnerName='현빈')
+/addr 현빈 155 160 29 31
+2026330004 /addr /addr 현빈 155 160 29 31
+insert into LogTBL values('2026330004','/addr 현빈 155 160 29 31','/addr',current_timestamp)
+6
+insert into ReqTBL values('2026330004','현빈','155','160','29','31',NULL,current_timestamp,current_timestamp)
+select * from MateTBL where telegramID ='2026330004' and name = '현빈'
+mateData : 현빈
+Matching Constructor : T
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+select * from MateTBL where tall between '155' and '160' and age between '29' and '31' and sex = '여' and telegramID != '2026330004'
+2051529128
+2051529128
+match data : 2051529128, 삼번, 여
+select * from ReqTBL where telegramID ='2051529128' and name = '삼번'
+select MAX(SEQ)+1 from MatchTBL where telegramID='2026330004'
+insert into MatchTBL values('3','2026330004','현빈','2051529128','삼번','N','Y','N',current_timestamp,current_timestamp)
+T||2051529128||소개팅대상자 [삼번] 을(를) 원하는 사람이 있습니다! 
+
+/check를 통해 매칭데이터를 확인하세요
+T||2026330004||소개팅대상자 [현빈] 이(가) 매칭되었습니다! 
+
+/check를 통해 매칭데이터를 확인하세요
+Matching Destructor
+DB Destructor
+/check 현빈
+2026330004 /check /check 현빈
+insert into LogTBL values('2026330004','/check 현빈','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2026330004' and A.name='현빈' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2026330004' and A.partnerName='현빈' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+1
+0
+T||2026330004||[요구사항 :  <-> 양쪽 매칭 / -> 한쪽 매칭]
+
+T||2026330004||3번 
+현빈 -> 삼번, tall : 158 age : 30 company : 네이버 area : 분당
+
+다슬 number : 010-9971-9294에게 연락하여 삼번에 대해 문의하세요!
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/delr 현빈
+2026330004 /delr /delr 현빈
+insert into LogTBL values('2026330004','/delr 현빈','/delr',current_timestamp)
+delete from ReqTBL where telegramID='2026330004' and name='현빈'
+delete from MatchTBL where (telegramID='2026330004' and name='현빈') or (partnerID='2026330004' and partnerName='현빈')
+/addr 현빈 155 160 29 31
+2026330004 /addr /addr 현빈 155 160 29 31
+insert into LogTBL values('2026330004','/addr 현빈 155 160 29 31','/addr',current_timestamp)
+6
+insert into ReqTBL values('2026330004','현빈','155','160','29','31',NULL,current_timestamp,current_timestamp)
+select * from MateTBL where telegramID ='2026330004' and name = '현빈'
+mateData : 현빈
+Matching Constructor : T
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+select * from MateTBL where tall between '155' and '160' and age between '29' and '31' and sex = '여' and telegramID != '2026330004'
+2051529128
+2051529128
+match data : 2051529128, 삼번, 여
+select * from ReqTBL where telegramID ='2051529128' and name = '삼번'
+select MAX(SEQ)+1 from MatchTBL where telegramID='2026330004'
+insert into MatchTBL values('3','2026330004','현빈','2051529128','삼번','N','Y','N',current_timestamp,current_timestamp)
+T||2051529128||소개팅대상자 [삼번] 을(를) 원하는 사람이 있습니다! 
+
+/check를 통해 매칭데이터를 확인하세요
+T||2026330004||소개팅대상자 [현빈] 이(가) 매칭되었습니다! 
+
+/check를 통해 매칭데이터를 확인하세요
+match data : 2051529128, 하나, 여
+select * from ReqTBL where telegramID ='2051529128' and name = '하나'
+2051529128 하나 2026330004 현빈
+select MAX(SEQ)+1 from MatchTBL where telegramID='2051529128'
+insert into MatchTBL values('2','2051529128','하나','2026330004','현빈','Y','Y','N',current_timestamp,current_timestamp)
+select MAX(SEQ)+1 from MatchTBL where telegramID='2026330004'
+insert into MatchTBL values('4','2026330004','현빈','2051529128','하나','Y','Y','N',current_timestamp,current_timestamp)
+T||2051529128||소개팅대상자 [하나] 이(가) 매칭되었습니다! 
+
+/check를 통해 매칭데이터를 확인하세요
+T||2026330004||소개팅대상자 [현빈] 이(가) 매칭되었습니다! 
+
+/check를 통해 매칭데이터를 확인하세요
+Matching Destructor
+DB Destructor
+/check 현빈
+2026330004 /check /check 현빈
+insert into LogTBL values('2026330004','/check 현빈','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2026330004' and A.name='현빈' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2026330004' and A.partnerName='현빈' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+2
+0
+T||2026330004||[요구사항 :  <-> 양쪽 매칭 / -> 한쪽 매칭]
+
+T||2026330004||3번 
+현빈 -> 삼번, tall : 158 age : 30 company : 네이버 area : 분당
+
+다슬 number : 010-9971-9294에게 연락하여 삼번에 대해 문의하세요!
+T||2026330004||4번 
+현빈 -> 하나, tall : 156 age : 30 company : 한국은행 area : 잠실
+
+다슬 number : 010-9971-9294에게 연락하여 하나에 대해 문의하세요!
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/check 현빈
+2026330004 /check /check 현빈
+insert into LogTBL values('2026330004','/check 현빈','/check',current_timestamp)
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.telegramID='2026330004' and A.name='현빈' and A.partnerID = B.telegramID and A.partnerName = B.name and C.telegramID = B.telegramID and A.del='N'
+select A.*, B.sex, B.tall, B.age, B.company, B.area, C.name, C.phoneNumber from MatchTBL A, MateTBL B, UserTBL C where A.partnerID='2026330004' and A.partnerName='현빈' and A.telegramID = B.telegramID and A.name = B.name and coupling='N' and C.telegramID = B.telegramID and A.del='N'
+2
+0
+T||2026330004||[요구사항 :  <-> 양쪽 매칭 / -> 한쪽 매칭]
+
+T||2026330004||3번 
+현빈 -> 삼번, tall : 158 age : 30 company : 네이버 area : 분당
+
+다슬 number : 010-9971-9294에게 연락하여 삼번에 대해 문의하세요!
+T||2026330004||4번 
+현빈 <-> 하나, tall : 156 age : 30 company : 한국은행 area : 잠실
+
+다슬 number : 010-9971-9294에게 연락하여 하나에 대해 문의하세요!
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/user
+2026330004 /user /user
+insert into LogTBL values('2026330004','/user','/user',current_timestamp)
+2026330004 표중선 010-5667-6106 2010062 Y N 2021-10-20 17:21:50
+Mode : TEST
+DB Construcor : T
+DB Mode : TEST
+<Section: TEST>
+/user
+2026330004 /user /user
+insert into LogTBL values('2026330004','/user','/user',current_timestamp)
+2026330004 표중선 010-5667-6106 2010062 Y N 2021-10-20 17:21:50

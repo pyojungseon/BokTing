@@ -1,0 +1,39 @@
+Notice Constructor : P
+DB Construcor : P
+DB Mode : PROD
+<Section: PROD>
+Mode : PROD
+DB Construcor : P
+DB Mode : PROD
+<Section: PROD>
+select * from NoticeTBL where send='N' order by regDate
+Notice Destructor
+DB Destructor
+DB Destructor
+Notice Constructor : P
+DB Construcor : P
+DB Mode : PROD
+<Section: PROD>
+Mode : PROD
+DB Construcor : P
+DB Mode : PROD
+<Section: PROD>
+select * from NoticeTBL where send='N' order by regDate
+select * from UserTBL where enable='Y'
+Notice Constructor : P
+DB Construcor : P
+DB Mode : PROD
+<Section: PROD>
+Mode : PROD
+DB Construcor : P
+DB Mode : PROD
+<Section: PROD>
+select * from NoticeTBL where send='N' order by regDate
+select * from UserTBL where enable='Y'
+(2, ' 행내직원 매칭방지 기능이 추가되었습니다 /add를 눌러 확인하여주세요!', 'N', datetime.datetime(2021, 11, 26, 15, 5, 11), datetime.datetime(2021, 11, 26, 15, 5, 11))
+P||2026330004||[공지사항 2021-11-26] 행내직원 매칭방지 기능이 추가되었습니다 /add를 눌러 확인하여주세요!
+P||2051529128||[공지사항 2021-11-26] 행내직원 매칭방지 기능이 추가되었습니다 /add를 눌러 확인하여주세요!
+P||2106117527||[공지사항 2021-11-26] 행내직원 매칭방지 기능이 추가되었습니다 /add를 눌러 확인하여주세요!
+P||2140998124||[공지사항 2021-11-26] 행내직원 매칭방지 기능이 추가되었습니다 /add를 눌러 확인하여주세요!
+P||983117815||[공지사항 2021-11-26] 행내직원 매칭방지 기능이 추가되었습니다 /add를 눌러 확인하여주세요!
+update NoticeTBL set send='Y', modDate=current_timestamp where seq = '2'
