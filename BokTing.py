@@ -5,6 +5,7 @@ from matching import Matching
 import configparser
 import sys
 import io
+import subprocess
 
 def getConfig(env):
     properties = configparser.ConfigParser()
@@ -316,6 +317,33 @@ def _admin(update, context):
         msg = env+"||"+str(update.effective_chat.id)+"||"+text
         msgQ.send(msg)
 
+def _yeyak(update, context):
+    text = 'ktx예약 시작'
+    logInsert(update, context)
+    yeyakData = update.message.text.split(" ")
+    ktx_from = yeyakData[0]
+    ktx_to = yeyakData[1]
+    ktx_date = yeyakData[2]
+    ktx_time = yeyakData[3]
+    ktx_vip = yeyakData[4]
+    subprocess.run(["../korailYeyak/runYeyak.sh", ktx_from+" "+ktx_to+" "+ktx_date+" "+ktx_time+" "+ktx_vip], shell=True)
+    msg = env+"||"+str(update.effective_chat.id)+"||"+text
+    msgQ.send(msg)
+
+def _yeyakCheck(update, context):
+    text = 'ktx예약 : '
+    logInsert(update, context)
+    running = subprocess.check_output(["../korailYeyak/checkYeyak.sh"], universal_newlines=True)
+    msg = env+"||"+str(update.effective_chat.id)+"||"+text+running
+    msgQ.send(msg)
+
+def _yeyakKill(update, context):
+    text = 'ktx예약 : '
+    logInsert(update, context)
+    subprocess.run(["../korailYeyak/stopYeyak.sh"], shell=True)
+    running = subprocess.check_output(["../korailYeyak/checkYeyak.sh"], universal_newlines=True)
+    msg = env + "||" + str(update.effective_chat.id) + "||" + text + running
+    msgQ.send(msg)
 
 def _help(update, context):
     text = '''/join : 사용자 등록
@@ -403,6 +431,14 @@ dispatcher.add_handler(admin_handler)
 help_handler = CommandHandler('help', _help)
 dispatcher.add_handler(help_handler)
 
+yeyak_handler = CommandHandler('yeyak', _yeyak)
+dispatcher.add_handler(yeyak_handler)
+
+yeyakc_handler = CommandHandler('yayakc', _yeyakCheck)
+dispatcher.add_handler(yeyakc_handler)
+
+yeyakk_handler = CommandHandler('yayakk', _yeyakKill)
+dispatcher.add_handler(yeyakk_handler)
 
 echo_handler = MessageHandler(Filters.text & (~Filters.command), echo)
 dispatcher.add_handler(echo_handler)
