@@ -321,13 +321,14 @@ def _yeyak(update, context):
     print("yeyak in")
     text = 'ktx예약 시작'
     logInsert(update, context)
-    yeyakData = update.message.text.split(" ")
-    ktx_from = yeyakData[0]
-    ktx_to = yeyakData[1]
-    ktx_date = yeyakData[2]
-    ktx_time = yeyakData[3]
-    ktx_vip = yeyakData[4]
-    subprocess.run(["../korailYeyak/runYeyak.sh", ktx_from+" "+ktx_to+" "+ktx_date+" "+ktx_time+" "+ktx_vip], shell=True)
+    # yeyakData = update.message.text.split(" ")
+    # ktx_from = yeyakData[0]
+    # ktx_to = yeyakData[1]
+    # ktx_date = yeyakData[2]
+    # ktx_time = yeyakData[3]
+    # ktx_vip = yeyakData[4]
+    # subprocess.run(["../korailYeyak/runYeyak.sh", ktx_from+" "+ktx_to+" "+ktx_date+" "+ktx_time+" "+ktx_vip], shell=True)
+    subprocess.run(["../korailYeyak/runYeyak.sh"], shell=True)
     msg = env+"||"+str(update.effective_chat.id)+"||"+text
     msgQ.send(msg)
 
@@ -431,9 +432,6 @@ dispatcher.add_handler(notice_handler)
 admin_handler = CommandHandler('admin', _admin)
 dispatcher.add_handler(admin_handler)
 
-help_handler = CommandHandler('help', _help)
-dispatcher.add_handler(help_handler)
-
 yeyak_handler = CommandHandler('yeyak', _yeyak)
 dispatcher.add_handler(yeyak_handler)
 
@@ -442,6 +440,9 @@ dispatcher.add_handler(yeyakc_handler)
 
 yeyakk_handler = CommandHandler('yayakk', _yeyakKill)
 dispatcher.add_handler(yeyakk_handler)
+
+help_handler = CommandHandler('help', _help)
+dispatcher.add_handler(help_handler)
 
 echo_handler = MessageHandler(Filters.text & (~Filters.command), echo)
 dispatcher.add_handler(echo_handler)
