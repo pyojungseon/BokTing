@@ -317,7 +317,7 @@ def _admin(update, context):
         msg = env+"||"+str(update.effective_chat.id)+"||"+text
         msgQ.send(msg)
 
-def _yeyak(update, context):
+async def _yeyak(update, context):
     print("yeyak in")
     text = 'ktx예약 시작'
     logInsert(update, context)
