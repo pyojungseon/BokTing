@@ -432,13 +432,13 @@ dispatcher.add_handler(notice_handler)
 admin_handler = CommandHandler('admin', _admin)
 dispatcher.add_handler(admin_handler)
 
-yeyak_handler = CommandHandler('yeyak', _yeyak)
+yeyak_handler = CommandHandler('ktx', _yeyak)
 dispatcher.add_handler(yeyak_handler)
 
-yeyakc_handler = CommandHandler('yayakc', _yeyakCheck)
+yeyakc_handler = CommandHandler('ktxc', _yeyakCheck)
 dispatcher.add_handler(yeyakc_handler)
 
-yeyakk_handler = CommandHandler('yayakk', _yeyakKill)
+yeyakk_handler = CommandHandler('ktxk', _yeyakKill)
 dispatcher.add_handler(yeyakk_handler)
 
 help_handler = CommandHandler('help', _help)
