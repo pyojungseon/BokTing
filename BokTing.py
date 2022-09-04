@@ -318,6 +318,7 @@ def _admin(update, context):
         msgQ.send(msg)
 
 def _yeyak(update, context):
+    print("yeyak in")
     text = 'ktx예약 시작'
     logInsert(update, context)
     yeyakData = update.message.text.split(" ")
@@ -331,6 +332,7 @@ def _yeyak(update, context):
     msgQ.send(msg)
 
 def _yeyakCheck(update, context):
+    print("yeyak check in")
     text = 'ktx예약 : '
     logInsert(update, context)
     running = subprocess.check_output(["../korailYeyak/checkYeyak.sh"], universal_newlines=True)
@@ -338,6 +340,7 @@ def _yeyakCheck(update, context):
     msgQ.send(msg)
 
 def _yeyakKill(update, context):
+    print("yeyak kill in")
     text = 'ktx예약 : '
     logInsert(update, context)
     subprocess.run(["../korailYeyak/stopYeyak.sh"], shell=True)
