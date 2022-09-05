@@ -5,6 +5,7 @@ from matching import Matching
 import configparser
 import sys
 import io
+import asyncio
 import subprocess
 
 def getConfig(env):
@@ -317,7 +318,7 @@ def _admin(update, context):
         msg = env+"||"+str(update.effective_chat.id)+"||"+text
         msgQ.send(msg)
 
-async def _yeyak(update, context):
+def _yeyak(update, context):
     print("yeyak in")
     text = 'ktx예약 시작'
     logInsert(update, context)
@@ -328,9 +329,13 @@ async def _yeyak(update, context):
     # ktx_time = yeyakData[3]
     # ktx_vip = yeyakData[4]
     # subprocess.run(["../korailYeyak/runYeyak.sh", ktx_from+" "+ktx_to+" "+ktx_date+" "+ktx_time+" "+ktx_vip], shell=True)
-    subprocess.run(["../korailYeyak/runYeyak.sh"], shell=True)
+    asyncio.run(async_yeyak())
     msg = env+"||"+str(update.effective_chat.id)+"||"+text
     msgQ.send(msg)
+
+async def async_yeyak():
+    subprocess.run(["../korailYeyak/runYeyak.sh"], shell=True)
+
 
 def _yeyakCheck(update, context):
     print("yeyak check in")
